@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hedgium-landingpage</title>
+      <link href="/src/style.css" rel="stylesheet">
+
+
+  </head>
+  
+  <body class="font-sans text-gray-800 bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-2xl font-bold text-primary">Hedgium</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-primary hover:text-accent font-medium">Home</a>
+                    <a href="#about" class="text-primary hover:text-accent font-medium">About</a>
+                    <a href="#solution" class="text-primary hover:text-accent font-medium">Solution</a>
+                    <a href="#services" class="text-primary hover:text-accent font-medium">Services</a>
+                    <a href="#pricing" class="text-primary hover:text-accent font-medium">Pricing</a>
+                    <a href="#contact" class="bg-accent text-white px-4 py-2 rounded-md font-medium hover:bg-blue-600 transition">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">About</a>
+                <a href="#solution" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">Solution</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">Services</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">Pricing</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-primary hover:bg-gray-100 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">AI-Powered Algo Strategies for Sustainable Investing</h1>
+                    <p class="text-lg text-gray-300 mb-8">Hedgium combines two decades of market expertise with cutting-edge technology to deliver sophisticated playbooks that maximize risk-adjusted returns.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600 transition">Get Started</a>
+                        <a href="#solution" class="bg-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-accent/10 rounded-2xl p-8 backdrop-blur-sm border border-accent/20">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/10 p-4 rounded-lg">
+                                <i class="fas fa-chart-line text-accent text-2xl mb-2"></i>
+                                <h3 class="text-white font-semibold">Risk-First Approach</h3>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-lg">
+                                <i class="fas fa-robot text-accent text-2xl mb-2"></i>
+                                <h3 class="text-white font-semibold">AI-Driven Insights</h3>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-lg">
+                                <i class="fas fa-shield-alt text-accent text-2xl mb-2"></i>
+                                <h3 class="text-white font-semibold">Portfolio Protection</h3>
+                            </div>
+                            <div class="bg-white/10 p-4 rounded-lg">
+                                <i class="fas fa-bolt text-accent text-2xl mb-2"></i>
+                                <h3 class="text-white font-semibold">Real-Time Execution</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">About Hedgium</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We are a quant-driven algo provider focused on delivering sophisticated tools that help clients build sustainable investing income.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Our Vision</h3>
+                    <p class="text-gray-600 mb-6">To pioneer the future of investing through seamless integration of technology and experience, delivering unparalleled risk-adjusted outcomes for our clients.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Our Mission</h3>
+                    <p class="text-gray-600">Our mission is to empower retail investors with scalable access to sophisticated investment and trading playbooks, integrating AI-driven technology, market expertise, and real-time insights to consistently deliver superior outcomes.</p>
+                    
+                    <div class="mt-6">
+                        <h4 class="text-lg font-medium text-primary mb-2">Our Guiding Principles</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm">Tech-First</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm">Risk-First</span>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm">Investor-First</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Company Overview</h3>
+                    <p class="text-gray-600 mb-6">Hedgium is based out of the Mumbai Metropolitan Region. We are developing a tech platform that allows investors to layer multiple investment and trading strategies through advanced algorithms.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-primary">Location</h4>
+                                <p class="text-gray-600">Mumbai Metropolitan Region, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-accent mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-primary">Email</h4>
+                                <p class="text-gray-600">contact@hedgium.in</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-accent mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-primary">Phone</h4>
+                                <p class="text-gray-600">+91 9833867883</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-globe text-accent mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium text-primary">Website</h4>
+                                <p class="text-gray-600">www.hedgium.ai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section id="solution" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">The Problem & Our Solution</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Bridging the sophistication gap between retail investors and institutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-red-50 p-8 rounded-xl border-l-4 border-red-500">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">The Problem</h3>
+                    <p class="text-gray-600 mb-4">According to SEBI, over 90% of retail traders lose money trading in Indian derivatives market each year. This is largely due to the sophistication gap with institutions that leverage advanced technology.</p>
+                    <p class="text-gray-600">Most retail investors are unaware that they can unlock incremental returns from their existing portfolios by leveraging available margins and deploying hedged option-selling strategies.</p>
+                    <div class="mt-6 bg-white p-4 rounded-lg">
+                        <p class="text-red-600 font-medium"><i class="fas fa-exclamation-triangle mr-2"></i>90% of retail traders lose money in derivatives</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-xl border-l-4 border-green-500">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Our Solution</h3>
+                    <p class="text-gray-600 mb-4">Hedgium reduces the gap between retail participants and institutions by combining knowledge and technology to reduce this asymmetry.</p>
+                    <p class="text-gray-600 mb-6">We provide affordable access to institutional-grade tools and real-time insights to empower retail investors and truly level the playing field.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Identify high probability opportunities in real-time</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Build potential strategies for identified opportunities</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Deploy chosen strategies in real-time</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-700">Highlight risk-adjusted returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Selling Points -->
+    <section class="section-padding bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Unique Approach</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">How we differentiate ourselves in the market</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-secondary p-6 rounded-xl card-hover">
+                    <div class="bg-accent/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user-graduate text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Guided Investor Journey</h3>
+                    <p class="text-gray-300">Our platform handholds the consumer journey assuming very basic level of sophistication in investing/trading.</p>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-xl card-hover">
+                    <div class="bg-accent/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">AI-Powered Personalization</h3>
+                    <p class="text-gray-300">The system identifies client objectives via portfolio analysis and AI-led exchanges to suggest personalized playbooks.</p>
+                </div>
+                
+                <div class="bg-secondary p-6 rounded-xl card-hover">
+                    <div class="bg-accent/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Continuous Monitoring</h3>
+                    <p class="text-gray-300">Intelligent backend system ensures flawless operation with real-time issue flagging and intervention capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive algorithmic solutions for different investor needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-chart-pie text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary">Portfolio Optimization</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Generate incremental passive returns on existing portfolios with low-risk, hedged option-selling strategies.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Leverage available margins effectively</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>AI-driven opportunity identification</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Risk-adjusted return optimization</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-tradingview text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary">Active Trading Strategies</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Build sustainable active income streams with clear views of risk and reward through algorithmic trading.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Real-time strategy deployment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Sophisticated risk management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>User control at every step</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Transparent Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Subscription-based model with tiers designed for different investor profiles</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Basic</h3>
+                        <div class="text-3xl font-bold text-accent">Up to ₹50L</div>
+                        <p class="text-gray-500 text-sm">AUM</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Core algorithm access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Basic portfolio optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Email support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">Get Started</button>
+                </div>
+                
+                <div class="bg-primary text-white rounded-xl p-8 card-hover transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-sm font-medium px-4 py-1 rounded-bl-lg rounded-tr-xl">POPULAR</div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold mb-2">Masters</h3>
+                        <div class="text-3xl font-bold">₹50L - ₹1Cr</div>
+                        <p class="text-gray-300 text-sm">AUM</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span>All Basic features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span>Advanced strategy suites</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span>Custom strategy development</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-accent text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition">Get Started</button>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Legends</h3>
+                        <div class="text-3xl font-bold text-accent">₹1Cr+</div>
+                        <p class="text-gray-500 text-sm">AUM</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">All Masters features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Dedicated account manager</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">White-glove onboarding</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-600">Custom API integration</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">Get Started</button>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600">All plans include our proprietary AI stack and risk management framework. Fees not exceeding 2.5% of AUM.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experties Section -->
+<section class="section-padding bg-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-primary mb-4">Our Expertise</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Experienced professionals bringing deep knowledge and market insights
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-primary mb-4">Education & Certifications</h3>
+        <p class="text-gray-600 text-sm">
+          Our team is composed of highly qualified professionals with degrees in engineering, commerce, and management, alongside advanced certifications such as CFA, NISM, and other globally recognized credentials.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-primary mb-4">Industry Experience</h3>
+        <p class="text-gray-600 text-sm">
+          With decades of combined corporate leadership and hands-on expertise in finance, media, and investment advisory, we bring strategic depth to every decision.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-primary mb-4">Market Expertise</h3>
+        <p class="text-gray-600 text-sm">
+          Our professionals have actively invested in Indian equity markets for over 20 years, with specialized experience in equity derivatives, portfolio management, and wealth creation strategies.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-primary mb-4">Core Strengths</h3>
+        <p class="text-gray-600 text-sm">
+          We combine analytical thinking, regulatory expertise, and strong business acumen to provide effective and reliable solutions tailored to market needs.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <div class="bg-white inline-flex items-center px-6 py-3 rounded-full shadow-md">
+        <i class="fas fa-users text-accent text-xl mr-3"></i>
+        <span class="text-primary font-medium">Strength: Diverse team with decades of experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Ready to transform your investment approach? Contact us today.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition">Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-light p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold text-primary mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-accent/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-map-marker-alt text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Location</h4>
+                                    <p class="text-gray-600">Mumbai Metropolitan Region, India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Email</h4>
+                                    <p class="text-gray-600">contact@hedgium.in</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-phone text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Phone</h4>
+                                    <p class="text-gray-600">+91 9833867883</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent/10 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-globe text-accent"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Website</h4>
+                                    <p class="text-gray-600">www.hedgium.ai</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <h4 class="font-medium text-primary mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Hedgium</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">Quant-driven algo strategies provider focused on delivering sophisticated playbooks that help clients build sustainable investing income.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition">About</a></li>
+                        <li><a href="#solution" class="text-gray-300 hover:text-white transition">Solution</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-sm"></i>
+                            <span>Mumbai Metropolitan Region</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-sm"></i>
+                            <span>contact@hedgium.in</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2 text-sm"></i>
+                            <span>+91 9833867883</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Hedgium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+
+</html>

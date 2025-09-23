@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #0F172A;
+  --color-secondary: #1E293B;
+  --color-accent: #3B82F6;
+  --color-light: #F8FAFC;
+  --sans: 'Inter', 'system-ui';
+}
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.gradient-bg {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+.section-padding {
+    padding: 5rem 0;
+}
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
