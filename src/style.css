@@ -4,7 +4,7 @@
   --color-secondary: #1E293B;
   --color-accent: #3B82F6;
   --color-light: #F8FAFC;
-  --sans: 'Inter', 'system-ui';
+  --font-sans: 'Inter', 'system-ui';
 }
 
 @import '@fortawesome/fontawesome-free/css/all.min.css';

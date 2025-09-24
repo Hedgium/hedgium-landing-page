@@ -5,7 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hedgium-landingpage</title>
-      <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+   
+    <link href="/src/style.css" rel="stylesheet">
 
 
   </head>
@@ -133,13 +137,13 @@
                                 <p class="text-gray-600">contact@hedgium.in</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
+                        <!-- <div class="flex items-start">
                             <i class="fas fa-phone text-accent mt-1 mr-3"></i>
                             <div>
                                 <h4 class="font-medium text-primary">Phone</h4>
                                 <p class="text-gray-600">+91 9833867883</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="flex items-start">
                             <i class="fas fa-globe text-accent mt-1 mr-3"></i>
                             <div>
@@ -271,7 +275,7 @@
                 <div class="bg-white p-8 rounded-xl shadow-md card-hover">
                     <div class="flex items-center mb-6">
                         <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-tradingview text-accent text-2xl"></i>
+                            <i class="fas fa-bullseye text-accent text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold text-primary">Active Trading Strategies</h3>
                     </div>
@@ -296,134 +300,199 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-padding bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-primary mb-4">Transparent Pricing</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Subscription-based model with tiers designed for different investor profiles</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
-                    <div class="text-center mb-6">
-                        <h3 class="text-xl font-semibold text-primary mb-2">Basic</h3>
-                        <div class="text-3xl font-bold text-accent">Up to ₹50L</div>
-                        <p class="text-gray-500 text-sm">AUM</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">Core algorithm access</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">Basic portfolio optimization</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">Email support</span>
-                        </li>
-                    </ul>
-                    <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">Get Started</button>
-                </div>
-                
-                <div class="bg-primary text-white rounded-xl p-8 card-hover transform scale-105 relative">
-                    <div class="absolute top-0 right-0 bg-accent text-white text-sm font-medium px-4 py-1 rounded-bl-lg rounded-tr-xl">POPULAR</div>
-                    <div class="text-center mb-6">
-                        <h3 class="text-xl font-semibold mb-2">Masters</h3>
-                        <div class="text-3xl font-bold">₹50L - ₹1Cr</div>
-                        <p class="text-gray-300 text-sm">AUM</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
-                            <span>All Basic features</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
-                            <span>Advanced strategy suites</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
-                            <span>Priority support</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
-                            <span>Custom strategy development</span>
-                        </li>
-                    </ul>
-                    <button class="w-full bg-accent text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition">Get Started</button>
-                </div>
-                
-                <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
-                    <div class="text-center mb-6">
-                        <h3 class="text-xl font-semibold text-primary mb-2">Legends</h3>
-                        <div class="text-3xl font-bold text-accent">₹1Cr+</div>
-                        <p class="text-gray-500 text-sm">AUM</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">All Masters features</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">Dedicated account manager</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">White-glove onboarding</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                            <span class="text-gray-600">Custom API integration</span>
-                        </li>
-                    </ul>
-                    <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">Get Started</button>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <p class="text-gray-600">All plans include our proprietary AI stack and risk management framework. Fees not exceeding 2.5% of AUM.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experties Section -->
-<section class="section-padding bg-light">
+    <!-- Pricing Section -->
+<section id="pricing" class="section-padding bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-primary mb-4">Transparent Pricing</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Subscription-based model with tiers designed for different investor profiles based on AUM
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Free Plan -->
+      <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-semibold text-primary mb-2">Free</h3>
+          <div class="text-3xl font-bold text-accent">₹0</div>
+          <p class="text-gray-500 text-sm">For AUM up to ₹10L</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Limited algorithm access</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Basic portfolio tracker</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Community support</span>
+          </li>
+        </ul>
+        <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Basic Plan -->
+      <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-semibold text-primary mb-2">Basic</h3>
+          <div class="text-3xl font-bold text-accent">₹1,000</div>
+          <p class="text-gray-500 text-sm">For AUM up to ₹50L</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Core algorithm access</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Basic portfolio optimization</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Email support</span>
+          </li>
+        </ul>
+        <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Masters Plan -->
+      <div class="bg-primary text-white rounded-xl p-8 card-hover transform scale-105 relative">
+        <div class="absolute top-0 right-0 bg-accent text-white text-sm font-medium px-4 py-1 rounded-bl-lg rounded-tr-xl">
+          POPULAR
+        </div>
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-semibold mb-2">Masters</h3>
+          <div class="text-3xl font-bold">₹5,000</div>
+          <p class="text-gray-300 text-sm">For AUM ₹50L – ₹1Cr</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+            <span>All Basic features</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+            <span>Advanced strategy suites</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+            <span>Priority support</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+            <span>Custom strategy development</span>
+          </li>
+        </ul>
+        <button class="w-full bg-accent text-white py-3 rounded-lg font-medium hover:bg-blue-600 transition">
+          Get Started
+        </button>
+      </div>
+
+      <!-- Legends Plan -->
+      <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover">
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-semibold text-primary mb-2">Legends</h3>
+          <div class="text-3xl font-bold text-accent">₹20,000</div>
+          <p class="text-gray-500 text-sm">For AUM above ₹1Cr</p>
+        </div>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">All Masters features</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Dedicated account manager</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">White-glove onboarding</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+            <span class="text-gray-600">Custom API integration</span>
+          </li>
+        </ul>
+        <button class="w-full bg-gray-100 text-primary py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+          Get Started
+        </button>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-gray-600">
+        All plans include our proprietary AI stack and risk management framework
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!--  Section -->
+
+
+    <section class="section-padding bg-light">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl font-bold text-primary mb-4">Our Expertise</h2>
       <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Experienced professionals bringing deep knowledge and market insights
+        Experienced professionals bringing deep knowledge, technology, and market insights
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+      <!-- Algorithmic Innovation -->
       <div class="bg-white p-8 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold text-primary mb-4">Education & Certifications</h3>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-robot text-accent text-2xl mr-3"></i>
+          <h3 class="text-xl font-semibold text-primary">Algorithmic Innovation</h3>
+        </div>
         <p class="text-gray-600 text-sm">
-          Our team is composed of highly qualified professionals with degrees in engineering, commerce, and management, alongside advanced certifications such as CFA, NISM, and other globally recognized credentials.
+          We design proprietary trading algorithms powered by advanced quantitative models, backtesting frameworks, and AI-driven strategies to consistently optimize performance.
         </p>
       </div>
 
+      <!-- Industry Experience -->
       <div class="bg-white p-8 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold text-primary mb-4">Industry Experience</h3>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-briefcase text-accent text-2xl mr-3"></i>
+          <h3 class="text-xl font-semibold text-primary">Industry Experience</h3>
+        </div>
         <p class="text-gray-600 text-sm">
           With decades of combined corporate leadership and hands-on expertise in finance, media, and investment advisory, we bring strategic depth to every decision.
         </p>
       </div>
 
+      <!-- Market Expertise -->
       <div class="bg-white p-8 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold text-primary mb-4">Market Expertise</h3>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-chart-line text-accent text-2xl mr-3"></i>
+          <h3 class="text-xl font-semibold text-primary">Market Expertise</h3>
+        </div>
         <p class="text-gray-600 text-sm">
           Our professionals have actively invested in Indian equity markets for over 20 years, with specialized experience in equity derivatives, portfolio management, and wealth creation strategies.
         </p>
       </div>
 
+      <!-- Core Strengths -->
       <div class="bg-white p-8 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold text-primary mb-4">Core Strengths</h3>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-cogs text-accent text-2xl mr-3"></i>
+          <h3 class="text-xl font-semibold text-primary">Core Strengths</h3>
+        </div>
         <p class="text-gray-600 text-sm">
           We combine analytical thinking, regulatory expertise, and strong business acumen to provide effective and reliable solutions tailored to market needs.
         </p>
@@ -489,7 +558,7 @@
                                     <p class="text-gray-600">contact@hedgium.in</p>
                                 </div>
                             </div>
-                            <div class="flex items-start">
+                            <!-- <div class="flex items-start">
                                 <div class="bg-accent/10 p-3 rounded-lg mr-4">
                                     <i class="fas fa-phone text-accent"></i>
                                 </div>
@@ -497,7 +566,7 @@
                                     <h4 class="font-medium text-primary">Phone</h4>
                                     <p class="text-gray-600">+91 9833867883</p>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="flex items-start">
                                 <div class="bg-accent/10 p-3 rounded-lg mr-4">
                                     <i class="fas fa-globe text-accent"></i>
@@ -512,15 +581,15 @@
                         <div class="mt-8 pt-6 border-t border-gray-200">
                             <h4 class="font-medium text-primary mb-4">Follow Us</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
+                                <a href="https://www.linkedin.com/company/hedgium-ai" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
+                                <!-- <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition">
                                     <i class="fab fa-facebook-f"></i>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -537,15 +606,15 @@
                     <h3 class="text-2xl font-bold mb-4">Hedgium</h3>
                     <p class="text-gray-300 mb-6 max-w-md">Quant-driven algo strategies provider focused on delivering sophisticated playbooks that help clients build sustainable investing income.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
+                        <a href="https://www.linkedin.com/company/hedgium-ai" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
+                        <!-- <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
                             <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="bg-secondary w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-accent hover:text-white transition">
                             <i class="fab fa-facebook-f"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 
@@ -571,10 +640,10 @@
                             <i class="fas fa-envelope mt-1 mr-2 text-sm"></i>
                             <span>contact@hedgium.in</span>
                         </li>
-                        <li class="flex items-start">
+                        <!-- <li class="flex items-start">
                             <i class="fas fa-phone mt-1 mr-2 text-sm"></i>
                             <span>+91 9833867883</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
