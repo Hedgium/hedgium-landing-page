@@ -624,6 +624,18 @@
   </div>
 </section>
 
+ <div class="text-center my-12" data-aos="fade-up">
+  <h3 class="text-2xl font-semibold text-primary mb-4">Ready to Achieve Similar Results?</h3>
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
+    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary-hover transition">
+      Book a free call
+    </a>
+    <button class="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-white transition join-waitlist">
+      Join the waitlist
+    </button>
+  </div>
+</div>
+
     
     <!-- Services Section -->
     <section id="services" class="section-padding bg-gray-50 text-gray-800">
@@ -682,6 +694,8 @@
         </div>
       </div>
     </section>
+
+
 
 
     <!-- Pricing Section -->
@@ -865,8 +879,27 @@
         </div>
       </div>
     </section>
+
+
+    <!-- After the Unique Selling Points section, before Performance Section -->
+<section class="section-padding bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Start Your Algorithmic Trading Journey</h2>
+    <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Join hundreds of investors who are already leveraging institutional-grade technology</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-md font-medium hover:bg-primary-hover transition text-lg">
+        Book a free call
+      </a>
+      <button class="border border-primary text-primary px-8 py-4 rounded-md font-medium hover:bg-primary hover:text-white transition text-lg join-waitlist">
+        Join the waitlist
+      </button>
+    </div>
+    <p class="text-gray-500 text-sm mt-4">No credit card required • Get started in minutes</p>
+  </div>
+</section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-white">
+    <!-- <section id="contact" class="section-padding bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Get In Touch</h2>
@@ -934,7 +967,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="faq" class="section-padding bg-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1045,6 +1078,39 @@
         </div>
       </div>
     </footer>
+
+
+    <!-- Waitlist Modal -->
+<div id="waitlist-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+    <div class="flex justify-between items-center mb-6">
+      <h3 class="text-2xl font-bold text-primary">Join the Waitlist</h3>
+      <button class="text-gray-500 hover:text-gray-700 close-modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <p class="text-gray-600 mb-6">Be the first to know when we launch new features and get early access to premium tools.</p>
+    <form id="waitlist-form" class="space-y-4">
+      <div>
+        <label for="waitlist-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+        <input type="email" id="waitlist-email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+      </div>
+      <div>
+        <label for="waitlist-aum" class="block text-sm font-medium text-gray-700 mb-1">Approximate Portfolio Size</label>
+        <select id="waitlist-aum" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+          <option value="<10L">Less than ₹10L</option>
+          <option value="10L-50L">₹10L - ₹50L</option>
+          <option value="50L-1Cr">₹50L - ₹1Cr</option>
+          <option value=">1Cr">More than ₹1Cr</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-primary-hover transition">
+        Join Waitlist
+      </button>
+    </form>
+  </div>
+</div>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -1091,6 +1157,54 @@
       document.getElementById('menu-toggle').addEventListener('click', function() {
         document.getElementById('mobile-menu').classList.toggle('hidden');
       });
+
+
+      // Waitlist functionality
+document.querySelectorAll('.join-waitlist').forEach(button => {
+  button.addEventListener('click', () => {
+    document.getElementById('waitlist-modal').classList.remove('hidden');
+  });
+});
+
+// Close modal
+document.querySelectorAll('.close-modal').forEach(button => {
+  button.addEventListener('click', () => {
+    document.getElementById('waitlist-modal').classList.add('hidden');
+  });
+});
+
+// Close modal when clicking outside
+document.getElementById('waitlist-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'waitlist-modal') {
+    e.target.classList.add('hidden');
+  }
+});
+
+// Sticky CTA
+window.addEventListener('scroll', function() {
+  const stickyCta = document.getElementById('sticky-cta');
+  if (window.scrollY > 500) {
+    stickyCta.classList.remove('hidden');
+  } else {
+    stickyCta.classList.add('hidden');
+  }
+});
+
+// Waitlist form submission
+document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('waitlist-email').value;
+  const aum = document.getElementById('waitlist-aum').value;
+  
+  // Here you would typically send this data to your backend
+  console.log('Waitlist signup:', { email, aum });
+  
+  // Show success message
+  alert('Thank you for joining our waitlist! We\'ll be in touch soon.');
+  document.getElementById('waitlist-modal').classList.add('hidden');
+  this.reset();
+});
+
     </script>
   </body>
 </html>
